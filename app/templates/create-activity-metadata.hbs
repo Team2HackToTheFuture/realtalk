@@ -1,1 +1,9 @@
-{{outlet}}
+<h2> Create a Lesson </h2>
+<div class='col-md-4'>
+  {{em-input label="Title" property="title"}}
+  {{em-input label="Subject" property="subject"}}
+  {{em-input label="Group Size" property="groupSize"}}
+  {{em-input label="Grade Level" property="gradeLevel"}}
+  {{em-input label="Materials" property="materials"}}
+  {{#bs-button type='success' action='saveMetadata'}}Save &amp; Continue »{{/bs-button}}
+</div>
