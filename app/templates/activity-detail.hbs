@@ -1,1 +1,10 @@
-{{outlet}}
+
+<h2>{{model.name}}</h2>
+
+<div class="col-md-10" style="margin-top: 30px; padding:0px; background-color: white;">
+    {{{model.content}}}
+</div>
+
+<div class="col-md-12" style='margin-top:20px'>
+    {{#link-to 'lesson-detail' model.lesson tagName='button' class='btn-large btn btn-primary' }}Back to Lesson{{/link-to}}
+</div>

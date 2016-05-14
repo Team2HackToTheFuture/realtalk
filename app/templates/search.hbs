@@ -44,14 +44,14 @@
       {{#if model.length}}
         <ul class='list-group'>
           {{#each model as |searchResult|}}
-            <li class='list-group-item'>
-                <ul>
+            {{#link-to 'lesson-detail' searchResult tagName='li' class='list-group-item'}}
+                <ul style="cursor:pointer;">
                     <li>Title: {{ searchResult.title }}</li>
                     <li>Rating: {{{ searchResult.ratingStars }}}</li>
                     <li>Subject: {{ searchResult.subject }}</li>
                     <li>Group Size: {{ searchResult.groupSize }}</li>
                 </ul>
-            </li>
+            {{/link-to}}
           {{/each}}
         </ul>
       {{else}}
