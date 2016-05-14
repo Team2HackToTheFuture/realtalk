@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+    .activity-item:hover {
+        background-color: #a6aaad;
+    }
+
 #title {
   color: white;
   font-weight: 700;

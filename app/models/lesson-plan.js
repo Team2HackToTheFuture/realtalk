@@ -10,6 +10,7 @@ var LessonPlan =  Model.extend({
     materials: attr('string'),
     activities: hasMany('activity'),
     rating: attr('number'),
+    objectives: attr('string'),
 
     ratingStars: function() {
         var ratingStars = '';
