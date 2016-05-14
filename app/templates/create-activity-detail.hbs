@@ -1,0 +1,16 @@
+
+
+<h2>Create Activity</h2>
+
+<div class="col-md-6">
+    Name:
+    {{input type='text' value=model.name}}
+</div>
+
+<div class="col-md-10" style="margin-top: 30px; padding:0px; background-color: white;">
+    {{activity-content-editor model=model}}
+</div>
+
+<div class="col-md-12" style='margin-top:20px'>
+    {{#link-to 'create-activity-lesson-activities' tagName='button' class='btn-large btn btn-primary' }}Save{{/link-to}}
+</div>
