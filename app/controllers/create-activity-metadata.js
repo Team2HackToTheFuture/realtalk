@@ -5,14 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     saveMetadata: function() {
-      this.transitionToRoute('create-activity-homework-activities');
+      this.transitionToRoute('create-activity-homework-activities', this.get("model.id"));
     }
   }
-
-  // title:  "",
-  // gradeLevel: "",
-  // groupSize: 0,
-  // subject: "",
-  // materials: "",
-  // activities: []
 });

@@ -1,6 +1,9 @@
 
-<h2> Add Lesson Activities </h2>
+<h2> Add Homework Activities </h2>
 <div class='col-md-4'>
-  {{textarea placeholder="Write your activities here, separated by commas." label="Activities" value=name cols="80" rows="6"}}
-  {{#bs-button type='success' action='stuff'}}Save &amp; Continue »{{/bs-button}}
+  <label class="ember-view control-label">Add any links to media or articles here</label>
+  {{em-input property="link1" placeholder="i.e. 'www.nytimes.com'"}}
+  {{em-input property="link2" placeholder="i.e. 'www.youtube.com'"}}
+  {{em-input property="link3" placeholder="i.e. 'image.jpg'"}}
+  {{#link-to 'create-activity-lesson-activities' model tagName='button' class='btn btn-primary btn-large'}}Save &amp; Continue »{{/link-to}}
 </div>

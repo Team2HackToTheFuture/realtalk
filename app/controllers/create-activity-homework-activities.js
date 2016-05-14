@@ -5,6 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     save_hw_data: function() {
+      var lesson_plan = this.get("model");
       console.log('saving activities!');
     }
   }
