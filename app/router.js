@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('register');
   this.route('dashboard');
   this.route('search');
+  this.route('lesson-detail');
+  this.route('activity-detail');
 });
 
 export default Router;
