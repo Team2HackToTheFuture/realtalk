@@ -1,5 +1,5 @@
 export default function(){
-  this.setDefault({duration: 500});
+  this.setDefault({duration: 300});
   this.transition(
     this.toRoute('index'),
     this.use('toLeft')
@@ -20,5 +20,10 @@ export default function(){
     this.toRoute('dashboard'),
     this.use('toUp'),
     this.reverse('toDown')
-  )
+  );
+  this.transition(
+    this.toRoute('search'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
 }
