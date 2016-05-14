@@ -16,4 +16,9 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+  this.transition(
+    this.toRoute('dashboard'),
+    this.use('toUp'),
+    this.reverse('toDown')
+  )
 }
