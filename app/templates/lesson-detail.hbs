@@ -1,1 +1,31 @@
-{{outlet}}
+<h2>{{model.title}}</h2>
+
+<ul>
+    <li>Rating: {{{ model.ratingStars }}}</li>
+    <li>Subject: {{ model.subject }}</li>
+    <li>Group Size: {{ model.groupSize }}</li>
+</ul>
+
+<div class='col-md-9'>
+  <div class='panel panel-default'>
+    <div class="panel-heading">
+      <h3 class="panel-title">Lesson Activities</h3>
+    </div>
+    <div class="panel-body">
+      {{#if model.activities.length}}
+        <ul class='list-group'>
+          {{#each model.activities as |activity|}}
+            {{#link-to 'activity-detail' activity tagName='li' class='list-group-item'}}
+                <h3 style="cursor:pointer;">{{ activity.name }}</h3>
+            {{/link-to}}
+          {{/each}}
+        </ul>
+      {{else}}
+        <p class='alert alert-info'>No activities in this lesson</p>
+      {{/if}}
+    </div>
+  </div>
+</div>
+<div class="col-md-12" style='margin-top:20px'>
+    {{#link-to 'search' tagName='button' class='btn-large btn btn-primary' }}Back to Search{{/link-to}}
+</div>

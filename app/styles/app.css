@@ -2,7 +2,9 @@
 body {
     background-color: clear;
   }
-
+.activity-name {
+    width:300px;
+}
     .btn {
       -webkit-border-radius: 9;
       -moz-border-radius: 9;

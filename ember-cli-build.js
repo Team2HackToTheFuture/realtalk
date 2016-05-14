@@ -6,6 +6,11 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-bootstrap': {
       'importBootstrapTheme': false
+    },
+    emberFroala: {
+      plugins  : true,
+      languages: ['es','fr','de'],
+      themes   : 'royal'
     }
   });
 

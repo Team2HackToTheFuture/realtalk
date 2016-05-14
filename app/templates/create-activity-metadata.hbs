@@ -5,5 +5,7 @@
   {{em-input label="Group Size" property="groupSize"}}
   {{em-input label="Grade Level" property="gradeLevel"}}
   {{em-input label="Materials" property="materials"}}
-  {{#bs-button type='success' action='saveMetadata'}}Save &amp; Continue »{{/bs-button}}
+  <label class="ember-view control-label">Lesson Objectives</label>
+  {{textarea label="Objectives" placeholder="Write your lesson's objectives and goals here." value=name cols="80" rows="6"}}
+  {{#link-to 'create-activity-lesson-activities' model tagName='button' class='btn btn-primary btn-large'}}Save &amp; Continue »{{/link-to}}
 </div>

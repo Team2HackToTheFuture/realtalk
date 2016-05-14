@@ -1,8 +1,37 @@
 
-<div class='col-md-4'>
+<div class='col-md-8'>
   <form class="navbar-form navbar-left" role="search">
     <div class="form-group">
-      {{input label="Search" class='form-control' value=searchTerm }}
+        {{input label="Search" class='form-control' value=searchTerm }}
+
+    </div>
+    <div class="form-group">
+      <label for="sel1">Filter Rating:</label>
+        <select class="form-control">
+            <option value=''>5</option>
+            <option value=''>4+</option>
+            <option value=''>3+</option>
+            <option value=''>2+</option>
+            <option value=''>1+</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="sel1">Filter Group Size:</label>
+        <select class="form-control">
+            <option value=''>&lt;60</option>
+            <option value=''>&lt;30</option>
+            <option value=''>&lt;15</option>
+            <option value=''>&lt;10</option>
+            <option value=''>&lt;5</option>
+        </select>
+    </div>
+   <div class="form-group">
+      <label for="sel1">Filter Subject:</label>
+        <select class="form-control">
+            <option value=''>All</option>
+            <option value=''>Social Studies</option>
+            <option value=''>Music</option>
+        </select>
     </div>
   </form>
 </div>
@@ -15,7 +44,14 @@
       {{#if model.length}}
         <ul class='list-group'>
           {{#each model as |searchResult|}}
-            <li class='list-group-item'> {{ searchResult.title }} </li>
+            {{#link-to 'lesson-detail' searchResult tagName='li' class='list-group-item'}}
+                <ul style="cursor:pointer; list-style: none;">
+                    <li>Title: {{ searchResult.title }}</li>
+                    <li>Rating: {{{ searchResult.ratingStars }}}</li>
+                    <li>Subject: {{ searchResult.subject }}</li>
+                    <li>Group Size: {{ searchResult.groupSize }}</li>
+                </ul>
+            {{/link-to}}
           {{/each}}
         </ul>
       {{else}}
