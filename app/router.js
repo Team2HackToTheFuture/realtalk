@@ -10,8 +10,8 @@ Router.map(function() {
   this.route('register');
   this.route('dashboard');
   this.route('search');
-  this.route('lesson-detail');
-  this.route('activity-detail');
+  this.route('lesson-detail', { path: '/lesson-detail/:lesson_id' });
+  this.route('activity-detail', { path: '/activity-detail/:activity_id' });
   this.route('create-activity-metadata');
   this.route('create-activity-lesson-activities');
   this.route('create-activity-homework-activities');
