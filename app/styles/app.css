@@ -1,6 +1,9 @@
 
 body {
-    background-color: transparent;
+    background-color: black;
+    background-image: url('/assets/imgs/realtaughtimage-full.jpeg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     color:black;
   }
 .activity-name {
@@ -10,18 +13,14 @@ body {
 .big-btn {
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
-  border-radius: 9px;
   font-family: Arial;
   color: black;
   font-size: 20px;
-  background-color: transparent;
   padding: 9px 18px 10px 20px;
   text-decoration: none;
 }
 
 .big-btn:hover {
-  background: #a6aaad;
-  text-decoration: none;
 }
 
 a:hover {
@@ -32,8 +31,22 @@ a {
 }
 
 #title {
-  color: #c0c0c0;
+  color: white;
   font-weight: 700;
   font-size: 100px;
   padding-top: 200px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+#subtitle {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.lighten {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+  padding: 20px;
 }
