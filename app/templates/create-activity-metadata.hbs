@@ -1,11 +1,16 @@
 <h2> Create a Lesson </h2>
 <div class='col-md-12'>
-  {{em-input label="Title" property="title"}}
-  {{em-input label="Subject" property="subject"}}
-  {{em-input label="Group Size" property="groupSize"}}
-  {{em-input label="Grade Level" property="gradeLevel"}}
-  {{em-input label="Materials" property="materials"}}
+    <label>Title</label>
+    {{#input label="Title" class='form-control' value=model.title}} {{/input}}
+    <label>Subject</label>
+    {{#input label="Subject" class='form-control' value=model.subject}} {{/input}}
+    <label>Group Size</label>
+    {{#input label="Subject" class='form-control' value=model.groupSize}} {{/input}}
+    <label>Grade Level</label>
+    {{#input label="Subject" class='form-control' value=model.gradeLevel}} {{/input}}
   <label class="ember-view control-label">Lesson Objectives</label>
-  {{textarea label="Objectives" placeholder="Write your lesson's objectives and goals here." value=name cols="80" rows="6"}}
+    <div></div>
+  {{textarea label="Objectives" placeholder="Write your lesson's objectives and goals here." value=objectives cols="80" rows="6"}}
+    <div></div>
   {{#link-to 'create-activity-lesson-activities' model tagName='button' class='btn btn-primary btn-large'}}Save &amp; Continue »{{/link-to}}
 </div>
