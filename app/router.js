@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('create-activity-metadata');
   this.route('create-activity-lesson-activities');
   this.route('create-activity-homework-activities');
+  this.route('create-activity-detail');
 });
 
 export default Router;
