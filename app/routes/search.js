@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import LessonPlan from 'realtalk/models/lesson-plan';
 
 export default Ember.Route.extend({
   queryParams: {
@@ -8,11 +9,10 @@ export default Ember.Route.extend({
   },
 
   model: function(params) {
-    return   [
-        {'title': 'blah'},
-        {'title': 'black'}
-      ].filter(function(lesson) {
-        return lesson.title.includes(params.searchTerm);
+    return   this.store.findAll('lesson-plan').then(function(lessons) {
+        return lessons.filter(function(lesson) {
+          return lesson.get('title').includes(params.searchTerm);
+        });
       });
   }
 });
