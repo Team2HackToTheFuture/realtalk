@@ -1,11 +1,12 @@
 <h2> Create a Lesson </h2>
-<div class='col-md-12'>
+<div class='col-md-10'>
   {{em-input label="Title" property="title"}}
   {{em-input label="Subject" property="subject"}}
   {{em-input label="Group Size" property="groupSize"}}
   {{em-input label="Grade Level" property="gradeLevel"}}
   {{em-input label="Materials" property="materials"}}
   <label class="ember-view control-label">Lesson Objectives</label>
+  <label class="ember-view control-label">Lesson Objectives</label><br>
   {{textarea label="Objectives" placeholder="Write your lesson's objectives and goals here." value=name cols="80" rows="6"}}
   {{#link-to 'create-activity-lesson-activities' model tagName='button' class='btn btn-primary btn-large'}}Save &amp; Continue »{{/link-to}}
 </div>

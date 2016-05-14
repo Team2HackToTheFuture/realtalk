@@ -6,29 +6,30 @@ body {
 .activity-name {
     width:300px;
 }
-    .btn {
-      -webkit-border-radius: 9;
-      -moz-border-radius: 9;
-      border-radius: 9px;
-      font-family: Arial;
-      color: black;
-      font-size: 20px;
-      background-color: transparent;
-      padding: 9px 18px 10px 20px;
-      text-decoration: none;
-    }
 
-    .btn:hover {
-      background: #a6aaad;
-      text-decoration: none;
-    }
+.big-btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 9px 18px 10px 20px;
+  text-decoration: none;
+}
 
-    a:hover {
-        text-decoration: none;
-    }
-    a {
-        text-decoration: none;
-    }
+.big-btn:hover {
+  background: #a6aaad;
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
 
 #title {
   color: #c0c0c0;
@@ -36,4 +37,3 @@ body {
   font-size: 100px;
   padding-top: 200px;
 }
-
