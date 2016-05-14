@@ -6,7 +6,7 @@
     "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0",
     "bootstrap": "~3.3.5",
-    "froala-wysiwyg-editor": "^2.2.4",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "~4.5.0",
+    "froala-wysiwyg-editor": "~2.2.4"
   }
 }

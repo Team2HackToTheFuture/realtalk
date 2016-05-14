@@ -2,7 +2,9 @@
 <h2>{{model.name}}</h2>
 
 <div class="col-md-10" style="margin-top: 30px; padding:0px; margin-left:20px; background-color: white;">
-    {{{model.content}}}
+    {{#froala-content}}
+        {{{model.content}}}
+    {{/froala-content}}
 </div>
 
 <div class="col-md-12" style='margin-top:20px'>

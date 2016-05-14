@@ -45,7 +45,7 @@
         <ul class='list-group'>
           {{#each model as |searchResult|}}
             {{#link-to 'lesson-detail' searchResult tagName='li' class='list-group-item'}}
-                <ul style="cursor:pointer;">
+                <ul style="cursor:pointer; list-style: none;">
                     <li>Title: {{ searchResult.title }}</li>
                     <li>Rating: {{{ searchResult.ratingStars }}}</li>
                     <li>Subject: {{ searchResult.subject }}</li>
