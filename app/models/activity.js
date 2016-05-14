@@ -12,9 +12,17 @@ var Activity =  Model.extend({
 
 Activity.reopenClass({
    FIXTURES: [
-       {
-           "name": "Discuss Drugs and Violence",
-           "content": "<p>"
+       {    "id": 1,
+           "name": "Discuss law enforcement culture in minority communities",
+           "content": "<p>Testing</p>",
+           "lessonPlan": 1
+       },
+      {    "id": 2,
+           "name": "Read 'History of Poverty in St. Louis' with group",
+           "content": "<p>Testing</p>",
+           "lessonPlan": 1
        }
    ]
 });
+
+export default Activity;

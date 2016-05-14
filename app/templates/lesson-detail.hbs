@@ -15,9 +15,9 @@
       {{#if model.activities.length}}
         <ul class='list-group'>
           {{#each model.activities as |activity|}}
-            <li class='list-group-item'>
-                <h3>{{ activity.name }}</h3>
-            </li>
+            {{#link-to 'activity-detail' activity tagName='li' class='list-group-item'}}
+                <h3 style="cursor:pointer;">{{ activity.name }}</h3>
+            {{/link-to}}
           {{/each}}
         </ul>
       {{else}}
