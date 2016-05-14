@@ -1,1 +1,25 @@
-{{outlet}}
+<h2>Add Lesson Activities</h2>
+
+<div class='col-md-9'>
+  <div class='panel panel-default'>
+    <div class="panel-heading">
+      <h3 class="panel-title">Lesson Activities</h3>
+    </div>
+    <div class="panel-body">
+      {{#if model.activities.length}}
+        <ul class='list-group'>
+          {{#each model.activities as |activity|}}
+            {{#link-to 'activity-detail' activity tagName='li' class='list-group-item'}}
+                <h3 style="cursor:pointer;">{{ activity.name }}</h3>
+            {{/link-to}}
+          {{/each}}
+        </ul>
+      {{else}}
+        <p class='alert alert-info'>No activities in this lesson</p>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+{{#link-to 'create-activity-detail' model}}Create New Activity{{/link-to}}
+{{#link-to 'create-activity-homework-activities' model tagName='button' class='btn btn-primary btn-large'}}Save &amp; Continue »{{/link-to}}
