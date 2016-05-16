@@ -21,6 +21,7 @@ body {
 }
 
 .big-btn:hover {
+    text-decoration: none;
 }
 
 a:hover {
